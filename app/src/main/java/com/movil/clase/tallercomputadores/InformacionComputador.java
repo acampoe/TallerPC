@@ -15,8 +15,8 @@ import org.w3c.dom.Text;
 public class InformacionComputador extends AppCompatActivity {
     private TextView txtMarca,txtTipo,txtRam,txtColor,txtSo;
     private ImageView foto;
-    private int marca,tipo,ram,color,so, fotod;
-    private String[] detMarca,detTipo,detRam,detColor,detSo;
+    private String marca,tipo,ram,color,so;
+    int fotod;
     private Intent i;
     private Bundle bundle;
     private String id;
@@ -25,32 +25,30 @@ public class InformacionComputador extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_informacion_computador);
 
-        txtMarca = findViewById(R.id.lblMarca);
-        txtTipo = findViewById(R.id.lblTipo);
-        txtRam = findViewById(R.id.lblRam);
-        txtColor = findViewById(R.id.lblColor);
-        txtSo = findViewById(R.id.lblSo);
+        i = getIntent();
+        txtMarca = findViewById(R.id.txtMarca);
+        txtTipo = findViewById(R.id.txtTipo);
+        txtRam = findViewById(R.id.txtRam);
+        txtColor = findViewById(R.id.txtColor);
+        txtSo = findViewById(R.id.txtSo);
         foto = findViewById(R.id.imgFoto);
 
-        detMarca = this.getResources().getStringArray(R.array.marcas);
-        detTipo = this.getResources().getStringArray(R.array.tipos);
-        detRam = this.getResources().getStringArray(R.array.rams);
-        detColor = this.getResources().getStringArray(R.array.colores);
-        detSo = this.getResources().getStringArray(R.array.sos);
-
         bundle = i.getBundleExtra("datos");
-        marca = bundle.getInt("marca");
-        tipo = bundle.getInt("tipo");
-        ram =bundle.getInt("ram");
-        color = bundle.getInt("color");
-        so = bundle.getInt("so");
-        id = bundle.getString("id");
 
-        txtMarca.setText(detMarca[marca]);
-        txtTipo.setText(detTipo[tipo]);
-        txtRam.setText(detRam[ram]);
-        txtColor.setText(detColor[color]);
-        txtSo.setText(detColor[so]);
+        marca = bundle.getString("marca");
+        tipo = bundle.getString("tipo");
+        ram =bundle.getString("ram");
+        color = bundle.getString("color");
+        so = bundle.getString("so");
+        id = bundle.getString("id");
+        fotod = bundle.getInt("foto");
+
+       txtMarca.setText(marca);
+       txtTipo.setText(tipo);
+       txtRam.setText(ram);
+       txtColor.setText(color);
+       txtSo.setText(so);
+       foto.setImageResource(fotod);
     }
     public void eliminar(View v){
         String positivo,negativo;

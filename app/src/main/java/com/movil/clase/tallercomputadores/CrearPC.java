@@ -56,14 +56,15 @@ public class CrearPC extends AppCompatActivity {
     }
 
     public void guardar(View v){
-        int marca,tipo,ram,color,so, foto;
+        String marca,tipo,ram,color,so;
+        int foto;
 
         foto = Datos.fotoAleatoria(fotos);
-        marca = cmbMarca.getSelectedItemPosition();
-        tipo = cmbTipo.getSelectedItemPosition();
-        ram = cmbRam.getSelectedItemPosition();
-        color = cmbColor.getSelectedItemPosition();
-        so = cmbSo.getSelectedItemPosition();
+        marca = cmbMarca.getSelectedItem().toString();
+        tipo = cmbTipo.getSelectedItem().toString();
+        ram = cmbRam.getSelectedItem().toString();
+        color = cmbColor.getSelectedItem().toString();
+        so = cmbSo.getSelectedItem().toString();
 
         id = Datos.getId();
 

@@ -95,14 +95,14 @@ public class MainActivity extends AppCompatActivity implements AdaptadorComputad
     }
     @Override
     public void onComputadorClick(Computador p) {
-        Intent i = new Intent(MainActivity.this,Detalle_PC.class);
+        Intent i = new Intent(MainActivity.this,InformacionComputador.class);
         Bundle b = new Bundle();
         b.putString("id",p.getId());
-        b.putInt("marca",p.getMarca());
-        b.putInt("tipo",p.getTipo());
-        b.putInt("apellido",p.getRam());
-        b.putInt("sexo",p.getColor());
-        b.putInt("sexo",p.getSo());
+        b.putString("marca",p.getMarca());
+        b.putString("tipo",p.getTipo());
+        b.putString("ram",p.getRam());
+        b.putString("color",p.getColor());
+        b.putString("so",p.getSo());
         b.putInt("foto",p.getFoto());
 
         i.putExtra("datos",b);

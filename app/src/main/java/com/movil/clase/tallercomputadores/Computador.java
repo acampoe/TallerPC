@@ -1,9 +1,10 @@
 package com.movil.clase.tallercomputadores;
 
 public class Computador {
-    private int marca,tipo,ram,color,so, foto;
+    private String marca,tipo,ram,color,so;
+    private int foto;
     private String id;
-    public Computador(String id, int marca, int tipo, int ram, int color, int so, int foto) {
+    public Computador(String id, String marca, String tipo, String ram, String color, String so, int foto) {
         this.marca = marca;
         this.tipo = tipo;
         this.ram = ram;
@@ -19,46 +20,46 @@ public class Computador {
         this.id = id;
     }
 
-    public int getMarca() {
+    public String getMarca() {
         return marca;
     }
     public String getId() {
         return id;
     }
 
-    public void setMarca(int marca) {
+    public void setMarca(String marca) {
         this.marca = marca;
     }
 
-    public int getTipo() {
+    public String getTipo() {
         return tipo;
     }
 
-    public void setTipo(int tipo) {
+    public void setTipo(String tipo) {
         this.tipo = tipo;
     }
 
-    public int getRam() {
+    public String getRam() {
         return ram;
     }
 
-    public void setRam(int ram) {
+    public void setRam(String ram) {
         this.ram = ram;
     }
 
-    public int getColor() {
+    public String getColor() {
         return color;
     }
 
-    public void setColor(int color) {
+    public void setColor(String color) {
         this.color = color;
     }
 
-    public int getSo() {
+    public String getSo() {
         return so;
     }
 
-    public void setSo(int so) {
+    public void setSo(String so) {
         this.so = so;
     }
 
