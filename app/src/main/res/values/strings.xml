@@ -56,4 +56,5 @@
         <item>@string/win7</item>
         <item>@string/macos</item>
     </string-array>
+    <string name="exitoso">Computador Creado Exitosamente!</string>
 </resources>
