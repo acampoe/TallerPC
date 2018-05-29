@@ -75,7 +75,7 @@ public class CrearPC extends AppCompatActivity {
     }
     public void onBackPressed(){
         finish();
-        Intent i = new Intent(CrearPC.this, Principal.class);
+        Intent i = new Intent(CrearPC.this, MainActivity.class);
         startActivity(i);
     }
 }
