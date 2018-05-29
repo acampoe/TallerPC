@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "427961336298",
+    "firebase_url": "https://computadores-511e9.firebaseio.com",
+    "project_id": "computadores-511e9",
+    "storage_bucket": "computadores-511e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427961336298:android:c7431c13aaedbb8d",
+        "android_client_info": {
+          "package_name": "com.movil.clase.tallercomputadores"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "427961336298-o59nppg4aqrtovga58l4nnt0hgrmtq5i.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "427961336298-o59nppg4aqrtovga58l4nnt0hgrmtq5i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlOTM1Yic4HXqdS9D67mLpx-QiuDdVubM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
