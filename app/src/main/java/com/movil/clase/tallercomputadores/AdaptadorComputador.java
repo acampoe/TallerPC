@@ -14,10 +14,11 @@ import java.util.ArrayList;
 public class AdaptadorComputador extends RecyclerView.Adapter<AdaptadorComputador.ComputadorViewHolder> {
     private ArrayList<Computador> computadores;
     private OnComputadorClickListener clickListener;
-
+    private String[] opcMarca,opcTipo,opcRam,opcColor,opcSo;
     public AdaptadorComputador(ArrayList<Computador> computadores, OnComputadorClickListener clickListener) {
         this.computadores = computadores;
         this.clickListener = clickListener;
+
     }
 
     @Override
@@ -31,11 +32,11 @@ public class AdaptadorComputador extends RecyclerView.Adapter<AdaptadorComputado
         final Computador c = computadores.get(position);
         holder.foto.setImageResource(c.getFoto());
         holder.marca.setText(c.getMarca());
-        holder.tipo.setText(c.getTipo());
+        /*holder.tipo.setText(c.getTipo());
         holder.ram.setText(c.getRam());
         holder.color.setText(c.getColor());
         holder.so.setText(c.getSo());
-
+*/
         holder.v.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view){
                 clickListener.onComputadorClick(c);

@@ -31,6 +31,7 @@ public class InformacionComputador extends AppCompatActivity {
         txtColor = findViewById(R.id.lblColor);
         txtSo = findViewById(R.id.lblSo);
         foto = findViewById(R.id.imgFoto);
+
         detMarca = this.getResources().getStringArray(R.array.marcas);
         detTipo = this.getResources().getStringArray(R.array.tipos);
         detRam = this.getResources().getStringArray(R.array.rams);
