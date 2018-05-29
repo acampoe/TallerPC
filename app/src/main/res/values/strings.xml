@@ -57,4 +57,7 @@
         <item>@string/macos</item>
     </string-array>
     <string name="exitoso">Computador Creado Exitosamente!</string>
+    <string name="pregunta_eliminacion">Desea Eliminar el Registro</string>
+    <string name="positivo">Si</string>
+    <string name="negativo">No</string>
 </resources>

@@ -14,6 +14,12 @@ import java.util.ArrayList;
 public class AdaptadorComputador extends RecyclerView.Adapter<AdaptadorComputador.ComputadorViewHolder> {
     private ArrayList<Computador> computadores;
     private OnComputadorClickListener clickListener;
+
+    public AdaptadorComputador(ArrayList<Computador> computadores, OnComputadorClickListener clickListener) {
+        this.computadores = computadores;
+        this.clickListener = clickListener;
+    }
+
     @Override
     public ComputadorViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_detalle__pc,parent,false);
